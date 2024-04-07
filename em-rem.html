@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+
+  <div class="title">EM & REM</div>
+
+  <div class="content">
+    <span class="box box-small">Small</span>
+    <span class="box box-large">Large</span>
+  </div>
+
+  <br /><br /><br />
+
+  <div class="slogan">We love ems</div>
+
+
+  <h3>Shrink font</h3>
+  <ul>
+    <li>Top level
+      <ul>
+        <li>Second level
+          <ul>
+            <li>Third level
+              <ul>
+                <li>Fourth level
+                  <ul>
+                    <li>Fifth level</li>
+                  </ul> 
+                </li>
+              </ul> 
+            </li>
+          </ul> 
+        </li>
+      </ul> 
+    </li>
+  </ul>
+
+  <style>
+    body {
+      font-size: 16px;
+    }
+
+    ul {
+      font-size: .8em;
+    }
+
+    .slogan {
+      font-size: 1.2em;  /* 16 x 1.2 = 19.2 */
+      padding: 1.2em;  /* 19.2 x 1.2 = 23.04 */
+      background-color: #ccc;
+    }
+    .box {
+      padding: 1em;
+      border-radius: 1em;
+      background-color: lightgray;
+    }
+    .box-small {
+      font-size: 1em;
+    }
+    .box-large {
+      font-size: 18px;
+    }
+
+    .content {
+      font-size: 18px;
+    }
+  </style>
+
+</body>
+</html>
+

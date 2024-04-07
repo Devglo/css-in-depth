@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Sprite sheet</title>
+  </head>
+  <body>
+    <div class="title">CSS Sprite sheet</div>
+
+    <h3>CSS sprite</h3>
+    <div class="sprite"></div>
+    <br /><br />
+
+    <h3>CSS image</h3>
+    <div class="cssimage"></div>
+
+    <h3>CSS normal image</h3>
+    <div class="normal-image">
+      <img src="./image/discord.svg" />
+      <img src="./image/meum.svg" />
+      <img src="./image/telegram.svg" />
+      <img src="./image/twitter.svg" />
+    </div>
+
+    <h3>CSS sprite social image</h3>
+    <div class="sprite-social">
+      <div class="sprite-social-meum"></div>
+      <div class="sprite-social-discord"></div>
+      <div class="sprite-social-telegram"></div>
+      <div class="sprite-social-twitter"></div>
+    </div>
+
+    <style>
+      .sprite {
+        width: 43px;
+        height: 44px;
+        background-image: url("./image/css-sprite.gif");
+        background-position: -47px 0;
+      }
+
+      .sprite:hover {
+        background-position: -91px 0;
+      }
+
+      .cssimage {
+        width: 54px;
+        height: 44px;
+        background-image: url("./image/arrow-left.png");
+      }
+      .cssimage:hover {
+        width: 54px;
+        height: 44px;
+        background-image: url("./image/arrow-right.png");
+      }
+
+      .sprite-social {
+        display: flex;
+      }
+
+      .sprite-social-meum {
+        width: 34px;
+        height: 34px;
+        background: url("./image/sprite-social.png") -10px -10px;
+      }
+
+      .sprite-social-discord {
+        width: 34px;
+        height: 34px;
+        background: url("./image/sprite-social.png") -64px -10px;
+      }
+
+      .sprite-social-telegram {
+        width: 34px;
+        height: 34px;
+        background: url("./image/sprite-social.png") -10px -64px;
+      }
+
+      .sprite-social-twitter {
+        width: 34px;
+        height: 34px;
+        background: url("./image/sprite-social.png") -64px -64px;
+      }
+    </style>
+  </body>
+</html>

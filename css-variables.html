@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+  <title>CSS Variables</title>
+</head>
+<body>
+
+  <div class="panel">
+    We have built partnerships with small farms around the world to
+    hand-select beans at the peak of season. We then carefully roast
+    in  to maximize their
+    potential.
+  </div>
+
+  <style>
+    :root {
+      --blue: #00f;
+    }
+
+    [data-theme="dark"] {
+      --blue: #f00;
+    }
+
+    .panel {
+      color: var(--blue, red);
+      padding:  var(--blue, red);
+    }
+
+
+  </style>
+
+</body>
+</html>
+
